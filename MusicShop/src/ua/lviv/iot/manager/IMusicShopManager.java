@@ -6,8 +6,8 @@ import ua.lviv.iot.model.Music;
 
 public interface IMusicShopManager {
 	List<Music> findByGenreForCD(String genre);
-	void sortByIncreasingDuration(List<Music> list);
-	void sortByDecreasingDuration(List<Music> list);
-	void sortByIncreasingSize(List<Music> list);
-	void sortByDecreasingSize(List<Music> list);
+	List<Music> getSortedByIncreasingDuration(List<Music> list);
+	List<Music> getSortedByDecreasingDuration(List<Music> list);
+	List<Music> getSortedByIncreasingSize(List<Music> list);
+	List<Music> getSortedByDecreasingSize(List<Music> list);
 }
